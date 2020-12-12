@@ -35,5 +35,5 @@ export const Video = styled.div`
 `;
 
 export const RegisterContainer = styled.div`
-    
+    width: 50%;
 `;
