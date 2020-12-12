@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     background-color: #fffcd5;
     font-family: 'Comfortaa', cursive;
   }
@@ -27,6 +27,10 @@ export const Main = styled.div`
 export const Input = styled.input`
     width: ${props => props.width};
     height: ${props => props.height};
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: ${props => props.fontSize};
+
 
     ${props => props.type === 'text' && css`
         padding: 10px;
@@ -37,6 +41,9 @@ export const Input = styled.input`
         background-color: #fffcd5;
         margin-left: 10px;
         margin-right: 10px;
+
+        display: flex;
+        text-align: center;
     `}
 
     ${props => props.type === 'submit' && css`
@@ -52,5 +59,4 @@ export const Input = styled.input`
         }
     `}
 
-      
 `;

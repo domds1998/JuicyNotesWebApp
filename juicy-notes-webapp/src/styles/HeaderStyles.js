@@ -6,11 +6,12 @@ export const HeaderWrapper = styled.div`
     background-color: #ffec9d;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
 `;
 
 export const Logo = styled.img`
     height: 60px;
+    padding: 12px;
 `;
 
 export const Title = styled.h2`

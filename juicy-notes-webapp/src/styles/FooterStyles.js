@@ -6,13 +6,20 @@ export const FooterWrapper = styled.div`
     background-color: #ffec9d;
     display: flex;
     align-items: center;
-    padding: 20px;
-
-    & > Img:last-of-type {
-        margin-left: auto;
-    }
+    justify-content: center;
 `;
 
 export const Img = styled.img`
     height: ${props => props.height};
+`;
+
+export const FooterContentWrapper = styled.div`
+    width: 1600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    & > Img:last-of-type {
+        margin-left: auto;
+    }
 `;
