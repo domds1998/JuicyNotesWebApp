@@ -2,8 +2,7 @@ import styled from 'styled-components/macro';
 
 export const ContentWrapper = styled.div`
     width: 100%;
-    background-color: white;
-    height: 100vh;
+    height: 100%;
 `;
 
 export const TitleWrapper = styled.div`
@@ -29,6 +28,7 @@ export const SortSelector = styled.select`
 
 export const CollectionWrapper = styled.div`
     width: 100%;
+    height: 100%;
     grid-auto-flow: row;
     display: grid;
     grid-template-columns: 15% 30% 10% 30% 15%;
