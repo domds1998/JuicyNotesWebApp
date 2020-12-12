@@ -5,35 +5,38 @@ export const FullContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
+`;
+
+export const WrapperItem = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 export const WelcomeWrapper = styled.div`
     width: 1600px;
     display: flex;
+    justify-content: center;
 `;
 
 export const TitleWrapper = styled.div`
-    width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    margin-right: 70px;
 `;
 
 export const Title = styled.div`
+    width: 654px;
     margin-top: auto;
-    background-color: blue;
+    color: #FDBB45;
+    overflow: hidden;
+    text-align: right;
+    line-height: 30px;
 `;
 
 export const Video = styled.div`
     background-color: #ffec9d;
-    width: 769px;
-    height: 483px;
-    border-radius: 20px;
-`;
-
-export const RegisterContainer = styled.div`
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    width: 654px;
+    height: 410px;
+    border-radius: 10px;
 `;

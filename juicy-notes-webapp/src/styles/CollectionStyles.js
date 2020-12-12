@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 
 export const ContentWrapper = styled.div`
-    width: 100%;
+    width: 1600px;
     background-color: white;
     height: 100vh;
 `;

@@ -1,23 +1,22 @@
 import React from 'react';
 import RegisterForm from '../components/RegisterForm';
-import { FullContainer, RegisterContainer, Title, TitleWrapper, Video, WelcomeWrapper } from '../styles/JumbotronStyles';
+import { Title, TitleWrapper, Video, WelcomeWrapper, WrapperItem } from '../styles/JumbotronStyles';
 
 function JumbotronPage() {
     return (
         <>
-            <FullContainer>
-                <WelcomeWrapper>
+            <WelcomeWrapper>
+                <WrapperItem>
                     <TitleWrapper>
-                        <Video>saas</Video>
-                        <Title>
-                            saasasa
+                        <Video></Video>
+                        <Title><b>
+                            Platforma pozwalająca na szybkie robienie notatek oraz fiszek.
+                            W oparciu o unikatową wtyczkę, pozwala na zaznaczanie tekstu na dowolnej stronie i zapisywanie go na <font color="#f48473">Juicy</font><font color="#d55b55">Notes</font></b>
                         </Title>
                     </TitleWrapper>
-                    <RegisterContainer>
-                        <RegisterForm />
-                    </RegisterContainer>
-                </WelcomeWrapper>
-            </FullContainer>
+                    <RegisterForm />
+                </WrapperItem>
+            </WelcomeWrapper>
         </>
     );
 }

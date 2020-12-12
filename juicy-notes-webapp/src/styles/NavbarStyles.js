@@ -7,7 +7,6 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const Element = styled.div`
-    background-color: orange;
     margin-right: 10px;
     padding: 5px;
 

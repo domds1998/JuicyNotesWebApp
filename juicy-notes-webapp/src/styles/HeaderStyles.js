@@ -10,9 +10,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Logo = styled.img`
-    width: 50px;
-    height: 100%;
-    background-color: orange;
+    height: 60px;
 `;
 
 export const Title = styled.h2`
