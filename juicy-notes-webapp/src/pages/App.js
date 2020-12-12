@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
       <Router>
+        <Header />
         <Main>
           <Switch>
             <Route exact path="/welcome">
@@ -28,8 +28,8 @@ function App() {
             </Route>
           </Switch>
         </Main>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

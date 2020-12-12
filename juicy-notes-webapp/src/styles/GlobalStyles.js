@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Main = styled.div`
     min-height: calc(100vh - 190px);
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
