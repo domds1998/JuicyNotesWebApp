@@ -35,10 +35,11 @@ export const Title = styled.div`
 `;
 
 export const Video = styled.div`
-    background-image: url('https://i.imgur.com/ZOqZtSW.gif');
+    background-image: url('https://i.imgur.com/leaRcnO.gif');
     background-size: cover;
     width: 654px;
     height: 410px;
     border-radius: 10px;
+    background-position: -110px;
     /* border: 7px solid #ffec9d; */
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import RegisterForm from '../components/RegisterForm';
 import { Title, TitleWrapper, Video, WelcomeWrapper, WrapperItem } from '../styles/JumbotronStyles';
 
-function JumbotronPage() {
+function JumbotronPage(props) {
     return (
         <>
             <WelcomeWrapper>
@@ -14,7 +14,7 @@ function JumbotronPage() {
                             W oparciu o unikatową wtyczkę, pozwala na zaznaczanie tekstu na dowolnej stronie i zapisywanie go na <font color="#f48473">Juicy</font><font color="#d55b55">Notes</font></b>
                         </Title>
                     </TitleWrapper>
-                    <RegisterForm />
+                    <RegisterForm toggle={props.toggle} />
                 </WrapperItem>
             </WelcomeWrapper>
         </>
