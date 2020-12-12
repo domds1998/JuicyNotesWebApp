@@ -1,10 +1,9 @@
 import React from 'react';
-import { CollectionElement, CollectionWrapper } from '../styles/CollectionsStyles';
-import { ContentWrapper } from '../styles/GlobalStyles';
+import { CollectionElement, CollectionWrapper, Wrapper } from '../styles/CollectionsStyles';
 
 function CollectionPage() {
     return (
-        <ContentWrapper>
+        <Wrapper>
             <CollectionWrapper>
                 <CollectionElement>assaas</CollectionElement>
                 <CollectionElement>assaas</CollectionElement>
@@ -13,7 +12,7 @@ function CollectionPage() {
                 <CollectionElement>assaas</CollectionElement>
                 <CollectionElement>assaas</CollectionElement>
             </CollectionWrapper>
-        </ContentWrapper>
+        </Wrapper>
     );
 }
 
