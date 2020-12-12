@@ -2,8 +2,8 @@ import styled from 'styled-components/macro';
 
 export const HeaderWrapper = styled.div`
     width: 100%;
-    height: 70px;
-    background-color: grey;
+    height: 60px;
+    background-color: #ffec9d;
     display: flex;
     align-items: center;
     padding: 10px;

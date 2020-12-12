@@ -6,10 +6,11 @@ export const Wrapper = styled.div`
     justify-content: center;
     background-color: white;
     padding: 20px;
+    position: relative;
 `;
 
 export const CollectionWrapper = styled.div`
- display: grid;
+  display: grid;
   grid-template-columns: 500px auto 500px;
   grid-template-rows: 300px auto 300px; 
   column-gap: 10px;
@@ -26,4 +27,7 @@ export const AddButton = styled.div`
     width: 100px;
     height: 100px;
     background-color: orange;
+    position: absolute;
+    right: 100px;
+    top: 100px;
 `;

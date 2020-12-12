@@ -1,9 +1,10 @@
 import React from 'react';
-import { CollectionElement, CollectionWrapper, Wrapper } from '../styles/CollectionsStyles';
+import { AddButton, CollectionElement, CollectionWrapper, Wrapper } from '../styles/CollectionsStyles';
 
 function CollectionPage() {
     return (
         <Wrapper>
+            <AddButton>+</AddButton>
             <CollectionWrapper>
                 <CollectionElement>assaas</CollectionElement>
                 <CollectionElement>assaas</CollectionElement>

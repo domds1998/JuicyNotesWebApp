@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 1.1vw;
+    background-color: #fffcd5;
   }
 
   *, *::before, *::after {
@@ -22,6 +23,8 @@ export const Main = styled.div`
     flex-direction: column;
     align-items: center;
 `;
+
 export const Input = styled.input`
-    height: 50px;
+    width: ${props => props.width};
+    height: ${props => props.height};
 `;
