@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import JumbotronPage from './JumbotronPage';
 import CollectionsPage from './CollectionsPage';
 import CollectionPage from './CollectionPage';
+import LoginPage from './LoginPage';
+
 
 
 
@@ -25,6 +27,9 @@ function App() {
             </Route>
             <Route exact path="/collection">
               <CollectionPage />
+            </Route>
+            <Route exact path="/login">
+              <LoginPage />
             </Route>
           </Switch>
         </Main>
