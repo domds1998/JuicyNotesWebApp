@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import { GlobalStyle, Main } from '../styles/GlobalStyles';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import JumbotronPage from './JumbotronPage';
-import CollectionPage from './CollectionPage';
+import CollectionsPage from './CollectionsPage';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
               <JumbotronPage />
             </Route>
             <Route exact path="/collections">
-              <CollectionPage />
+              <CollectionsPage />
             </Route>
           </Switch>
         </Main>

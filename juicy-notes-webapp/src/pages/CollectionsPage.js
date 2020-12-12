@@ -1,5 +1,5 @@
 import React from 'react';
-import { CollectionElement, CollectionWrapper } from '../styles/CollectionStyles';
+import { CollectionElement, CollectionWrapper } from '../styles/CollectionsStyles';
 import { ContentWrapper } from '../styles/GlobalStyles';
 
 function CollectionPage() {

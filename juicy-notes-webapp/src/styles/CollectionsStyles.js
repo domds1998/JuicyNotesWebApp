@@ -4,7 +4,7 @@ export const CollectionWrapper = styled.div`
     width: 100%;
     grid-auto-flow: row;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 0fr));
     grid-auto-rows: auto;
     background-color: green;
     padding-top: 50px;
