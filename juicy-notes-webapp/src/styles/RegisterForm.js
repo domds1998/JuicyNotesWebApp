@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const RegisterWrapper = styled.div`
     width: 100%;
@@ -10,5 +10,5 @@ export const RegisterWrapper = styled.div`
 `;
 
 export const Button = styled.div`
-    
+
 `;

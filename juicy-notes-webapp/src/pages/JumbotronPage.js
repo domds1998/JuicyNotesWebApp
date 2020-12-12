@@ -1,7 +1,6 @@
 import React from 'react';
 import RegisterForm from '../components/RegisterForm';
-import { ContentWrapper } from '../styles/GlobalStyles';
-import { FullContainer, Title, TitleWrapper, WelcomeWrapper, Video } from '../styles/JumbotronStyles';
+import { FullContainer, RegisterContainer, Title, TitleWrapper, Video, WelcomeWrapper } from '../styles/JumbotronStyles';
 
 function JumbotronPage() {
     return (
@@ -9,12 +8,14 @@ function JumbotronPage() {
             <FullContainer>
                 <WelcomeWrapper>
                     <TitleWrapper>
+                        <Video>saas</Video>
                         <Title>
                             saasasa
-                    </Title>
-                        <Video>saas</Video>
+                        </Title>
                     </TitleWrapper>
-                    <RegisterForm />
+                    <RegisterContainer>
+                        <RegisterForm />
+                    </RegisterContainer>
                 </WelcomeWrapper>
             </FullContainer>
         </>
