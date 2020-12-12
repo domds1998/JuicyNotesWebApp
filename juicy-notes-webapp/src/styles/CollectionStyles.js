@@ -19,7 +19,7 @@ export const Title = styled.p`
 `;
 
 export const SortSelector = styled.select`
-    
+    width: 100px;
 `;
 
 export const CollectionWrapper = styled.div`
