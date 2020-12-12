@@ -1,13 +1,35 @@
-import React from 'react';
+import React, {useState}from 'react';
 import { RegisterWrapper, RegisterFormWrapper, InputWrapper, Span } from '../styles/RegisterForm';
 import { Input } from '../styles/GlobalStyles';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 function RegisterForm() {
     const { register, handleSubmit, watch, errors } = useForm();
+    const registerUrl = "https://localhost:5001/api/user/register";
+    const authenticateUrl = "https://localhost:5001/api/user/authenticate"
+    const [res, setRes] = useState(null);
 
     const handleRegisterButton = (data) => {
-        console.log(data);
+    
+    axios.post(registerUrl, data)
+        .then(response =>{
+            setRes(response.data)
+        });
+
+        let credential = {
+            "Username" : data.username, 
+            "Password" : data.password
+        }
+        
+        console.log(credential);
+
+        axios.post(authenticateUrl, credential)
+        .then(response=>{
+            setRes(response.data);
+        })
+
+        console.log(res);
     }
 
     return (
