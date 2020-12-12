@@ -8,28 +8,38 @@ function RegisterForm() {
     const { register, handleSubmit, watch, errors } = useForm();
     const registerUrl = "https://localhost:5001/api/user/register";
     const authenticateUrl = "https://localhost:5001/api/user/authenticate"
+    const getUserUrl = "https://localhost:5001/api/user"
     const [res, setRes] = useState(null);
 
-    const handleRegisterButton = (data) => {
-    
+    const handleRegisterButton = async (data) => {
     axios.post(registerUrl, data)
-        .then(response =>{
-            setRes(response.data)
-        });
+        ;
 
         let credential = {
             "Username" : data.username, 
             "Password" : data.password
         }
-        
-        console.log(credential);
 
         axios.post(authenticateUrl, credential)
-        .then(response=>{
-            setRes(response.data);
-        })
+        .then(response =>{
+            setRes(response.data)
+        });
+        
 
-        console.log(res);
+        localStorage.setItem('JWT', res["token"]);
+
+
+        /*let token = localStorage.getItem('token');
+        //axios.defaults.headers.common['authorization'] = `bearer ${token}`; // for all requests
+        const config = {
+            method: 'get',
+            url: `${getUserUrl}`,
+            headers: {'Authorization': `bearer ${token}`}
+        }
+
+        let res = await axios(config);
+
+        console.log(res);*/
     }
 
     return (
