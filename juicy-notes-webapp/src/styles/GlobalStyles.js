@@ -28,3 +28,7 @@ export const ContentWrapper = styled.div`
     background-color: white;
     height: 100vh;
 `;
+
+export const Input = styled.input`
+    height: 50px;
+`;
