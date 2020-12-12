@@ -22,13 +22,6 @@ export const Main = styled.div`
     flex-direction: column;
     align-items: center;
 `;
-
-export const ContentWrapper = styled.div`
-    width: 1600px;
-    background-color: white;
-    height: 100vh;
-`;
-
 export const Input = styled.input`
     height: 50px;
 `;

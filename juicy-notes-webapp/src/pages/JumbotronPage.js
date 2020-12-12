@@ -17,7 +17,6 @@ function JumbotronPage() {
                     <RegisterForm />
                 </WelcomeWrapper>
             </FullContainer>
-            <ContentWrapper></ContentWrapper>
         </>
     );
 }
