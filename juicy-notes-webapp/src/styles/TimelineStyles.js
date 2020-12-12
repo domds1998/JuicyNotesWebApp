@@ -65,15 +65,15 @@ export const Reverse = styled.div`
 
 `;
 
-export const Bin = styled.div`
-    background-color: #D55B55;
+export const Bin = styled.img`
     grid-column-start: 2;
     height: 50px;
     border-radius: 15px;
+    margin-left: 50%;
 `;
 
-export const Juice = styled.div`
+export const Juice = styled.img`
     grid-column-start: 2;
-    height: 50px;
+    height: 100%;
     margin: 0 auto;
 `;
