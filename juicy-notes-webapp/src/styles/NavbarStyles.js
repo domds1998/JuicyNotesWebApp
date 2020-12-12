@@ -13,4 +13,8 @@ export const Element = styled.div`
     &:last-of-type {
         margin-right: 0px;
     }
+
+    &:hover {
+        color: #d55b55;
+    }
 `;

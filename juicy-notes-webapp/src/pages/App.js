@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { GlobalStyle, Main } from '../styles/GlobalStyles';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import JumbotronPage from './JumbotronPage';
 import CollectionsPage from './CollectionsPage';
 import CollectionPage from './CollectionPage';
@@ -13,15 +13,28 @@ import TimelinePage from './TimelinePage';
 
 
 function App() {
+  const [isUserAuthenticated, setUserAutenticated] = useState(false);
+
+  function toggleAuthenticated() {
+    setUserAutenticated(!isUserAuthenticated);
+  }
+
   return (
     <>
       <GlobalStyle />
       <Router>
-        <Header />
+        <Header isUserAuthenticated={isUserAuthenticated} />
         <Main>
           <Switch>
+            <Route exact path="/" render={() => {
+              return (
+                isUserAuthenticated ?
+                  <Redirect to="/timeline" /> :
+                  <Redirect to="/welcome" />
+              );
+            }} />
             <Route exact path="/welcome">
-              <JumbotronPage />
+              <JumbotronPage toggle={toggleAuthenticated} />
             </Route>
             <Route exact path="/collections">
               <CollectionsPage />
@@ -30,7 +43,7 @@ function App() {
               <CollectionPage />
             </Route>
             <Route exact path="/login">
-              <LoginPage />
+              <LoginPage toggle={toggleAuthenticated} />
             </Route>
             <Route exact path="/timeline">
               <TimelinePage />

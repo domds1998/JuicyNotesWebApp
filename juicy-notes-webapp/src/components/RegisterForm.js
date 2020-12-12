@@ -1,32 +1,45 @@
-import React, {useState}from 'react';
+import React, { useState } from 'react';
 import { RegisterWrapper, RegisterFormWrapper, InputWrapper, Span } from '../styles/RegisterForm';
 import { Input } from '../styles/GlobalStyles';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
-function RegisterForm() {
+function RegisterForm(props) {
     const { register, handleSubmit, watch, errors } = useForm();
     const registerUrl = "https://localhost:5001/api/user/register";
     const authenticateUrl = "https://localhost:5001/api/user/authenticate"
     const getUserUrl = "https://localhost:5001/api/user"
     const [res, setRes] = useState(null);
 
+    let history = useHistory();
+
+    const handleClickLogin = () => {
+        history.push("/login");
+    }
+
     const handleRegisterButton = async (data) => {
-    axios.post(registerUrl, data)
-        ;
+
+        props.toggle();
+        history.push("/timeline");
+
+        axios.post(registerUrl, data)
+            ;
 
         let credential = {
-            "Username" : data.username, 
-            "Password" : data.password
+            "Username": data.username,
+            "Password": data.password
         }
 
         axios.post(authenticateUrl, credential)
-        .then(response =>{
-            setRes(response.data)
-        });
-        
+            .then(response => {
+                setRes(response.data)
+            });
 
-        localStorage.setItem('JWT', res["token"]);
+
+        // localStorage.setItem('JWT', res["token"]);
+
+
 
 
         /*let token = localStorage.getItem('token');
@@ -64,7 +77,7 @@ function RegisterForm() {
                 </InputWrapper>
 
                 <Input width="235px" height="44px" bgColor="#22635e" fontSize="1em" type="submit" value="Zarejestruj"></Input>
-                <Input width="150px" height="30px" bgColor="#f48473" type="button" value="Zaloguj się"></Input>
+                <Input width="150px" height="30px" bgColor="#f48473" type="button" value="Zaloguj się" onClick={() => handleClickLogin()}></Input>
 
             </RegisterFormWrapper>
         </RegisterWrapper>

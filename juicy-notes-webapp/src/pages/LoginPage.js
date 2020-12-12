@@ -2,12 +2,12 @@ import React from 'react';
 import LoginForm from '../components/LoginForm';
 import { WelcomeWrapper, WrapperItem } from '../styles/JumbotronStyles';
 
-function LoginPage() {
+function LoginPage(props) {
     return (
         <>
             <WelcomeWrapper>
                 <WrapperItem>
-                    <LoginForm />
+                    <LoginForm toggle={props.toggle} />
                 </WrapperItem>
             </WelcomeWrapper>
         </>

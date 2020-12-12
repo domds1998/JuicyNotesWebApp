@@ -3,11 +3,11 @@ import { HeaderWrapper, Logo } from '../styles/HeaderStyles';
 import Navbar from './Navbar';
 import LogoTekst from '../images/LogoTekst.png';
 
-export default function Header() {
+export default function Header(props) {
     return (
         <HeaderWrapper>
             <Logo src={LogoTekst} />
-            <Navbar />
+            <Navbar isUserAutenticated={props.isUserAutenticated} />
         </HeaderWrapper>
     );
 }

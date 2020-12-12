@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
 
 export const Logo = styled.img`
     height: 60px;
-    padding: 12px;
+    padding: 8px;
 `;
 
 export const Title = styled.h2`
