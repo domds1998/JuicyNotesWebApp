@@ -29,6 +29,7 @@ export const SortSelector = styled.select`
 
 export const CollectionWrapper = styled.div`
     width: 100%;
+    height: 100%;
     grid-auto-flow: row;
     display: grid;
     grid-template-columns: 15% 30% 10% 30% 15%;
