@@ -74,6 +74,6 @@ export const Bin = styled.img`
 
 export const Juice = styled.img`
     grid-column-start: 2;
-    height: 100%;
+    height: 80px;
     margin: 0 auto;
 `;
