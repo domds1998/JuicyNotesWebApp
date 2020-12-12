@@ -7,6 +7,7 @@ import JumbotronPage from './JumbotronPage';
 import CollectionsPage from './CollectionsPage';
 import CollectionPage from './CollectionPage';
 import LoginPage from './LoginPage';
+import TimelinePage from './TimelinePage';
 
 
 
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route exact path="/login">
               <LoginPage />
+            </Route>
+            <Route exact path="/timeline">
+              <TimelinePage />
             </Route>
           </Switch>
         </Main>
