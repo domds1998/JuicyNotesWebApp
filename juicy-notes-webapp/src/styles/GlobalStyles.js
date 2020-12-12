@@ -33,7 +33,6 @@ export const Input = styled.input`
 
 
     ${props => props.type === 'text' && css`
-        padding: 10px;
         border: none;
         border-radius: 10px;
         color: grey;
@@ -58,5 +57,34 @@ export const Input = styled.input`
             background-color: #1E4C48;
         }
     `}
+
+    ${props => props.type === 'password' && css`
+        border: none;
+        border-radius: 10px;
+        color: grey;
+        outline: 0;
+        background-color: #fffcd5;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        display: flex;
+        text-align: center;
+    `}
+
+    
+    ${props => props.type === 'button' && css`
+
+        background-color: ${props => props.bgColor};
+        color: white;
+        border: none;
+        border-radius: 10px;
+        outline: 0;
+
+        &:hover {
+            background-color: #1E4C48;
+        }
+    `}
+
+
 
 `;

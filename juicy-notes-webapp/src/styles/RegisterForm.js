@@ -2,13 +2,20 @@ import styled from 'styled-components/macro';
 
 export const RegisterWrapper = styled.div`
     width: 464px;
-    height: 570px;
+    min-height: 570px;
     display: flex;
     flex-direction: column;
     padding-top: 72px;
+    padding-bottom: 72px;
     align-items: center;
     background-color: #ffec9d;
     border-radius: 10px;
+`;
+
+export const InputWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 `;
 
 export const RegisterFormWrapper = styled.form`
@@ -17,12 +24,26 @@ export const RegisterFormWrapper = styled.form`
     justify-content: center;
     align-items: center;
 
-    & > input[type=text] {
+    & > ${InputWrapper} {
         margin-bottom: 35px;
     }
 
-    & > input[type=submit] {
-        margin-top: 20px;
+    & > input[type=password] {
+        margin-bottom: 30px;
     }
 
+    & > input[type=submit] {
+        margin-top: 30px;
+    }
+
+    
+    & > input[type=button] {
+        margin-top: 30px;
+    }
+
+`;
+
+export const Span = styled.div`
+    margin-top: 10px;
+    font-size: 0.8em;
 `;
