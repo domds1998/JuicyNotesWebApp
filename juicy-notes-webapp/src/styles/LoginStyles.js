@@ -32,12 +32,12 @@ export const RegisterFormWrapper = styled.form`
     }
 
     & > input[type=submit] {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     
     & > input[type=button] {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
 `;
