@@ -9,7 +9,6 @@ export const RegisterWrapper = styled.div`
     padding-bottom: 72px;
     align-items: center;
     background-color: #ffec9d;
-    border-radius: 10px;
 `;
 
 export const InputWrapper = styled.div`
@@ -33,12 +32,12 @@ export const RegisterFormWrapper = styled.form`
     }
 
     & > input[type=submit] {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     
     & > input[type=button] {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
 `;

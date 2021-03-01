@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components/macro';
 
 export const GlobalStyle = createGlobalStyle`
   body{
@@ -34,7 +34,6 @@ export const Input = styled.input`
 
     ${props => props.type === 'text' && css`
         border: none;
-        border-radius: 10px;
         color: grey;
         outline: 0;
         background-color: #fffcd5;
@@ -50,7 +49,6 @@ export const Input = styled.input`
         background-color: ${props => props.bgColor};
         color: white;
         border: none;
-        border-radius: 10px;
         outline: 0;
 
         &:hover {
@@ -60,7 +58,6 @@ export const Input = styled.input`
 
     ${props => props.type === 'password' && css`
         border: none;
-        border-radius: 10px;
         color: grey;
         outline: 0;
         background-color: #fffcd5;
@@ -77,7 +74,6 @@ export const Input = styled.input`
         background-color: ${props => props.bgColor};
         color: white;
         border: none;
-        border-radius: 10px;
         outline: 0;
 
         &:hover {
