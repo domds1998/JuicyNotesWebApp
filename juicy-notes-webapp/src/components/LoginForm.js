@@ -13,11 +13,11 @@ function LoginForm(props) {
 
     let history = useHistory();
 
-    const handleClickLogin = () => {
+    const handleRegisterButton = () => {
         history.push("/welcome");
     }
 
-    const handleRegisterButton = (data) => {
+    const handleLoginButton = (data) => {
 
         props.toggle();
         history.push("/timeline");
@@ -44,7 +44,7 @@ function LoginForm(props) {
 
     return (
         <RegisterWrapper>
-            <RegisterFormWrapper onSubmit={handleSubmit(handleRegisterButton)}>
+            <RegisterFormWrapper onSubmit={handleSubmit(handleLoginButton)}>
                 <Login>LOGOWANIE</Login>
                 <InputWrapper>
                     <Input name="username" width="357px" height="60px" fontSize="1em" type="text" placeholder="Login" ref={register({ required: true })}></Input>
@@ -57,7 +57,7 @@ function LoginForm(props) {
                 </InputWrapper>
 
                 <Input width="235px" height="44px" bgColor="#22635e" fontSize="1em" type="submit" value="Zaloguj się"></Input>
-                <Input width="150px" height="30px" bgColor="#f48473" type="button" value="Zarejestruj" onClick={() => handleClickLogin()}></Input>
+                <Input width="150px" height="30px" bgColor="#f48473" type="button" value="Zarejestruj" onClick={() => handleRegisterButton()}></Input>
 
             </RegisterFormWrapper>
         </RegisterWrapper>
