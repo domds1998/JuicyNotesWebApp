@@ -6,7 +6,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: black;
     font-size: 1.2em;
-    background-color: #fffcd5;
     font-family: 'Comfortaa', cursive;
   }
 
@@ -34,9 +33,9 @@ export const Input = styled.input`
 
     ${props => props.type === 'text' && css`
         border: none;
+        border-bottom: 2px solid #419bf9;
         color: grey;
         outline: 0;
-        background-color: #fffcd5;
         margin-left: 10px;
         margin-right: 10px;
 
@@ -57,10 +56,10 @@ export const Input = styled.input`
     `}
 
     ${props => props.type === 'password' && css`
-        border: none;
+    border: none;
+        border-bottom: 2px solid #419bf9;
         color: grey;
         outline: 0;
-        background-color: #fffcd5;
         margin-left: 10px;
         margin-right: 10px;
 
