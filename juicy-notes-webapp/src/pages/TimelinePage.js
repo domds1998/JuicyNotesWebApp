@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentWrapper, CollectionWrapper, CollectionItem, CollectionPin } from '../styles/TimelineStyles';
 
 let array = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-let colors = ["#967AFA", "#9CD964", "#F6FC79", "#25D946"]
+let colors = ["f48473", "d55b55", "db7667", "aa5c50", "f59081"]
 
 function renderTimeLine() {
 
@@ -11,7 +11,7 @@ function renderTimeLine() {
     let result = array.map(value => {
 
         // var randomColor = Math.floor(Math.random() * (16777215 - 100 + 1)).toString(16);
-        var randomColor = Math.floor(Math.random() * (16777215 - 10000 + 1)).toString(16);
+        var randomColor = colors[Math.floor(Math.random() * 5)];
 
         return <>
             <CollectionPin direction={counter % 2 === 0 ? "left" : "right"} background={'#' + randomColor}>{value}</CollectionPin>
